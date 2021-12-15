@@ -113,7 +113,7 @@ public class HeadObj extends GameObj{
         if (this.x == food.x && this.y == food.y) {
             // 重新放置食物位置 并且 添加一条蛇身
             this.frame.foodObj = food.getFood();
-            this.frame.bodyObjList.add(new BodyObj(GameUtils.bodyImg, 30, 210, this));
+            this.frame.bodyObjList.add(new BodyObj(GameUtils.bodyImg, 30, 210, this.frame));
 
         }
 
